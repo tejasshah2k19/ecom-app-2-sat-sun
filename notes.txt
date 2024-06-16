@@ -1,0 +1,51 @@
+webapp -> database -> 
+
+jdbc api
+	jar
+	lib
+	dep 
+	 
+java.sql 
+	Connection 
+	
+	Statement : sql 
+	PreapredStatement : sql 
+	CallableStatement : pl/sql**************** 
+	
+	
+	
+select * from royal; 
+	
+	
+mysql
+pg
+oracle
+	
+*) driver file 
+	mysql-connector.jar 
+	classes12.jar 
+	pg.jar 
+-------------------------------------------------------------------
+mysql connector maven 
+------------------------------------------------------------
+step1: add mysql-connector -> pom.xml
+step2: dbConnection 
+		1) driver class --> com.mysql.cj.jdbc.Driver.
+		2) url	--> localhost:3306/ecomapp_2	
+		3) userName --> root 
+		4) password --> root 
+-------------------------------------------------------------
+
+
+pstmt-> executeUpdate:insert update delete  , executeQuery:select  
+
+
+
+
+
+
+
+	
+	
+	
+	

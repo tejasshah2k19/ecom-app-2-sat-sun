@@ -1,0 +1,16 @@
+signup 
+login 
+forget password 
+change password 
+list products 
+add to cart 
+buy
+payment->dummy 
+order 
+chart 
+
+-->cookie,session,filter,listener,
+-->jdbc 
+-->jstl 
+-->collection
+-->
