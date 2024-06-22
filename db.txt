@@ -12,3 +12,5 @@ create table users (
 	role varchar(20)
 );
 
+
+select * from users; 

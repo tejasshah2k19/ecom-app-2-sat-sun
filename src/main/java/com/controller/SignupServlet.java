@@ -25,19 +25,20 @@ public class SignupServlet extends HttpServlet {
 			// connection con
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ecomapp_2", "root", "root");
-			
-			PreparedStatement pstmt = con.prepareStatement("insert into users (firstName,gender,email,password,role) values (?,?,?,?,?)");
-			
+
+			PreparedStatement pstmt = con
+					.prepareStatement("insert into users (firstName,gender,email,password,role) values (?,?,?,?,?)");
+
 			pstmt.setString(1, firstName);
 			pstmt.setString(2, gender);
 			pstmt.setString(3, email);
 			pstmt.setString(4, password);
 			pstmt.setString(5, "CUSTOMER");
-			
-			pstmt.executeUpdate();//insert 
-			
-			
-			
+
+			int record = pstmt.executeUpdate();// insert
+
+			System.out.println(record + " Inserted....");
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
