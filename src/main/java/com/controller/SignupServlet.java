@@ -38,6 +38,9 @@ public class SignupServlet extends HttpServlet {
 			int record = pstmt.executeUpdate();// insert
 
 			System.out.println(record + " Inserted....");
+			
+			
+			response.sendRedirect("Login.jsp");
 
 		} catch (Exception e) {
 			e.printStackTrace();
