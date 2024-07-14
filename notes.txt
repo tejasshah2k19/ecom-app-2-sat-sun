@@ -38,8 +38,25 @@ step2: dbConnection
 
 
 pstmt-> executeUpdate:insert update delete  , executeQuery:select  
+---------------------------------------------------------------
+
+create table products (
+	productId integer primary key auto_increment,
+	price integer, 
+	category varchar(30),
+	qty integer,
+	productImagePath varchar(300)
+);
+
+NewProduct.jsp -> input -> submit -> InsertProductServlet-> db record insert 
+
+[ products/iphone12.jpg ] 
 
 
+------------------------------------
+
+EL -> pom.xml -> jar -> jstl 
+->jsp taglib 
 
 
 

@@ -14,3 +14,19 @@ create table users (
 
 
 select * from users; 
+
+
+---------------------------
+
+create table products (
+	productId integer primary key auto_increment,
+	productName varchar(30),
+	price integer, 
+	category varchar(30),
+	qty integer,
+	productImagePath varchar(300)
+);
+
+drop table products; 
+
+-------------------------------
